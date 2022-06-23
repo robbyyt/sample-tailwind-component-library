@@ -1,4 +1,5 @@
 const path = require('path');
+import '../src/styles/_common.scss';
 
 module.exports = {
   "stories": [
@@ -9,7 +10,6 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/preset-scss",
   ],
   "framework": "@storybook/react",
   "core": {
