@@ -1,6 +1,5 @@
 import React from "react";
-import { FaArrowRight } from 'react-icons/fa';
-import "./Button.scss";
+import { ButtonLink, FaArrowRightIcon, ButtonLabel } from "./style";
 
 export interface ButtonProps {
   label: string;
@@ -8,15 +7,17 @@ export interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return(
-    <a
-    className="button-link"
+    <ButtonLink
     href="https://www2.bora.com/en-int/cooktop-extractor-systems"
     target="_blank"
     >
       <div className="button-content-container">
-         <p className="button-label">{props.label} <FaArrowRight className="icon" /></p>
+         <ButtonLabel>
+          {props.label}
+          <FaArrowRightIcon />
+         </ButtonLabel>
       </div>
-    </a>
+    </ButtonLink>
   );
 };
 
